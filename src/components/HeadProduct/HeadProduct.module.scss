@@ -1,0 +1,136 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(150deg, #dcdcdc 40%, #eeeeee );
+    border-radius: 20px;
+    display: flex;
+    padding: 10rem 4rem 4rem 10rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+
+    p{
+        font-size: 2rem;
+        font-weight: 600;
+        margin-left: 1rem;
+    }
+
+    h4{
+        font-size: 4rem;
+        margin-left: 1rem;
+    }
+
+    h3{
+        font-size: 11.5rem;
+        color: white;
+        margin-top: -3rem;
+    }
+
+    img{
+        position: absolute;
+        width: 900px;
+        right: 300px;
+        bottom: 0px;
+        // transform: rotate(10deg);
+        filter: drop-shadow(0 0 10px black);
+        pointer-events: none;
+    }
+
+    .container__buttonAndDescription{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        button{
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            margin-top: -2rem;
+            margin-left: 1rem;
+        }
+
+        .container__buttonAndDescription__description{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            width: 250px;
+
+            p{
+                font-size: 1rem;
+                
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 968px){
+    .container{
+        width: 100%;
+        height: 90vh;
+        border-radius: 0px;
+        display: flex;
+        padding: 2rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    
+        p{
+            font-size: 2rem;
+            margin-left: 0rem;
+        }
+    
+        h4{
+            font-size: 4rem;
+            margin-left: 0rem;
+        }
+    
+        h3{
+            font-size: 3rem;
+            margin-top: 0rem;
+        }
+    
+        img{
+            position: relative;
+            width: 350px;
+            right: 70px;
+            object-fit: cover;
+            bottom: 0px;
+        }
+    
+        .container__buttonAndDescription{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+    
+            button{
+                margin-top: 1rem;
+                margin-left: 0rem;
+                width: 200px;
+                font-size: 1rem;
+            }
+    
+            .container__buttonAndDescription__description{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                width: 300px;
+                margin-top: 1rem;
+    
+                p{
+                    font-size: 1rem;
+                    
+                }
+            }
+        }
+    }
+}

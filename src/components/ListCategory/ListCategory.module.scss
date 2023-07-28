@@ -1,0 +1,285 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 1300px;
+    margin: 0 auto;
+    height: 75vh;
+    margin-top: 2rem;
+
+    .container__card{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        height: 270px;
+        border-radius: 10px;
+        padding: 0 1rem 3rem 2rem;
+        position: relative;
+        overflow: hidden;
+        img{
+            position: absolute;
+            pointer-events: none;
+        }
+
+
+        p{
+            color: white;
+        }
+
+        b{
+            font-size: 2rem;
+        }
+
+        h4{
+            font-size: 2.5rem;
+            color: black;
+            opacity: .5;
+            margin-bottom: 1rem;
+        }
+
+        button{
+            padding: 10px 25px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+
+        &:nth-child(1){
+            width: 24%;
+            background: linear-gradient(150deg, #222222 50%, rgb(65, 65, 65));
+            margin-bottom: 1rem;
+
+            img{
+                width: 280px;
+                right: 30px;
+                bottom: 0;
+                z-index: 10;
+            }
+
+            p{
+                color: white;
+            }
+
+            b{
+                font-size: 2rem;
+                color: white;
+            }
+
+            h4{
+                font-size: 2.5rem;
+                color: gray;
+                margin-bottom: 1rem;
+            }
+
+            button{
+                background-color: red;
+                color: white;
+            }
+        }
+
+        &:nth-child(2){
+            width: 24%;
+            background: linear-gradient(150deg, #fdc62e 70%, #fcc72d);
+
+            img{
+                width: 350px;
+                right: -70px;
+                bottom: 30px;
+                z-index: 10;
+            }
+
+            b{
+                color: white;
+            }
+
+            button{
+                background-color: white;
+                color: rgb(209, 209, 0);
+            }
+        }
+
+        &:nth-child(3){
+            width: 49%;
+            background: linear-gradient(150deg, #f42c37 70%, #fd4753);
+            padding: 0 1rem 3rem 4.5rem;
+
+            img{
+                width: 430px;
+                right: 90px;
+                bottom: -10px;
+                z-index: 10;
+            }
+
+            b{
+                color: white;
+            }
+
+            button{
+                background-color: white;
+                color: red;
+            }
+        }
+
+        &:nth-child(4){
+            width: 49%;
+            background: #ededed;
+            padding: 0 1rem 3rem 4.5rem;
+
+            img{
+                width: 280px;
+                right: 100px;
+                bottom: 0;
+                z-index: 10;
+            }
+
+            b, p{
+                color: black;
+            }
+
+            button{
+                background-color: red;
+                color: white;
+            }
+        }
+
+        &:nth-child(5){
+            width: 24%;
+            justify-content: flex-start;
+            padding: 1rem 0rem 0rem 2rem;
+            background:  linear-gradient(150deg, #2cd06f 70%, #27d36c);
+
+            img{
+                width: 330px;
+                right: 0px;
+                bottom: 0;
+                z-index: 10;
+            }
+
+            b{
+                color: white;
+                font-size: 1.5rem;
+            }
+
+            h4{
+                font-size: 2rem;
+                font-weight: 7s00;
+            }
+
+            button{
+                background-color: white;
+                color: green;
+            }
+        }
+
+        &:nth-child(6){
+            width: 24%;
+            justify-content: flex-start;
+            padding: 1rem 0rem 0rem 2rem;
+            background:  linear-gradient(150deg, #147aff 70%, #148eff);
+
+
+            img{
+                width: 300px;
+                right: -40px;
+                bottom: 0;
+                z-index: 10;
+            }
+
+            b{
+                color: white;
+                font-size: 1.5rem;
+            }
+
+            h4{
+                font-size: 2rem;
+                font-weight: 7s00;
+            }
+
+            button{
+                background-color: white;
+                color:  blue;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 968px){
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+        margin-top: 2rem;
+    
+        .container__card{
+            min-width: 350px;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+
+            &:nth-child(3){
+                padding: 0 1rem 3rem 2rem;
+    
+                img{
+                    width: 300px;
+                    right: -70px;
+                    bottom: 30px;
+                }
+            }
+    
+            &:nth-child(4){
+                width: 49%;
+                background: #ededed;
+                padding: 0 1rem 3rem 2rem;
+    
+                img{
+                    width: 200px;
+                    right: -60px;
+                    bottom: 0;
+                    z-index: 10;
+                }
+    
+                b, p{
+                    color: black;
+                }
+    
+                button{
+                    background-color: red;
+                    color: white;
+                }
+            }
+    
+            &:nth-child(5){
+                width: 24%;
+                justify-content: flex-start;
+                padding: 1rem 0rem 0rem 2rem;
+                background:  linear-gradient(150deg, #2cd06f 70%, #27d36c);
+    
+                img{
+                    width: 330px;
+                    right: 0px;
+                    bottom: 0;
+                    z-index: 10;
+                }
+    
+                b{
+                    color: white;
+                    font-size: 1.5rem;
+                }
+    
+                h4{
+                    font-size: 2rem;
+                    font-weight: 7s00;
+                }
+    
+                button{
+                    background-color: white;
+                    color: green;
+                }
+            }
+    
+           
+        }
+    }
+}
